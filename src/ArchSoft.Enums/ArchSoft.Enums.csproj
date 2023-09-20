@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <PackageId>ArchSoft.Enums</PackageId>
+        <Version>1.0.3</Version>
+        <PackageReleaseNotes>Added 'Description' attribute to Enum items so they can be retrieved with the correct spelling.</PackageReleaseNotes>
+        <Authors>Ricardo de Luna Galdino</Authors>
+        <Company>ArchSoft</Company>
+        <Copyright>© 2023 ArchSoft</Copyright>
+        <Description>Library with a compilation of Enums.</Description>
+        <PackageProjectUrl>http://www.archsoft.com.br</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/archsoft-br/pkg_enums_dotnet</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageTags>Enums Enumerators</PackageTags>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.4">
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+            <PrivateAssets>all</PrivateAssets>
+        </PackageReference>
+        <PackageReference Include="SonarAnalyzer.CSharp" Version="9.10.0.77988">
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+            <PrivateAssets>all</PrivateAssets>
+        </PackageReference>
+        <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+            <PrivateAssets>all</PrivateAssets>
+        </PackageReference>
+        <None Include="LICENSE" Pack="true" PackagePath=""/>
+        <None Include="README.md" Pack="true" PackagePath=""/>
+    </ItemGroup>
+
+
+</Project>
